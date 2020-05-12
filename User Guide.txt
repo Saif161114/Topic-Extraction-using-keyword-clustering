@@ -1,0 +1,44 @@
+*********************************************
+**TOPIC EXTRACTION USING KEYWORD CLUSTERING**
+*********************************************
+
+**********************************
+*** Developer: 	Saifullah Butt ***
+*** Roll No: 	161114	       ***
+*** Batch:	BSCS F16       ***
+**********************************
+
+First of All the Tool i have used is Google Collaborator.
+
+Step1:
+Open Google and Search for Google Collaborator there.
+Step2:
+On Google Colab homepage goto file and then new notebook.
+Step3:
+Paste the function_def code in the first cell and compile it. If you see error in compile there will be a missing directory named as tika. you have to install it using the following command.
+!pip install tika
+Step4:
+After the sucessfull compilation of the function_def code, create a new cell and paste the driver code there.
+Step5:
+Before the compilation of this second cell we first need to upload sample pdf's from which we are going to extract the topics.
+Step6:
+Compile the second cell we will get the output.
+
+**********
+**Output**
+**********
+
+2020-05-10 09:14:03,670 [MainThread  ] [INFO ]  Retrieving http://search.maven.org/remotecontent?filepath=org/apache/tika/tika-server/1.24/tika-server-1.24.jar to /tmp/tika-server.jar.
+2020-05-10 09:14:04,359 [MainThread  ] [INFO ]  Retrieving http://search.maven.org/remotecontent?filepath=org/apache/tika/tika-server/1.24/tika-server-1.24.jar.md5 to /tmp/tika-server.jar.md5.
+2020-05-10 09:14:04,806 [MainThread  ] [WARNI]  Failed to see startup log message; retrying...
+
+PDF contains 7313 words
+
+Ten most frequent words are:
+[('the', 256), ('and', 220), ('of', 210), ('in', 176), ('hbx', 151), ('b', 144), ('catenin', 96), ('cells', 74), ('were', 74), ('a', 73)]
+
+Words longer than 15 characters:
+['Characterization', 'Gastroenterology', 'Immunohistochemical', 'REV_ISS_WEB_CAS_13014_107', 'Semiquantitative', 'antiproliferative', 'cstc2015jcyjBX0011', 'diaminobenzidine', 'electrotransferred', 'hepatocarcinogene', 'hepatocarcinogenesis', 'immunohistochemical', 'orthohepadnavirus', 'paraformaldehyde', 'tocarcinogenesis', 'wileyonlinelibrary']
+
+The topic may be familiar with those words:
+['Association', 'Australia', 'Chongqing', 'Hepatitis', 'Japanese', 'Original', 'University', 'activate', 'activation', 'activity', 'associated', 'carcinoma', 'cellular', 'enhanced', 'expression', 'hepatitis', 'hepatocellular', 'hepatoma', 'increased', 'infected', 'infection', 'luciferase', 'migration', 'mutation', 'mutations', 'patients', 'proliferation', 'promoter', 'published', 'signaling', 'tumorous', 'wileyonlinelibrary']s
